@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchKaro - Apna Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Logo and Dark/Light Mode Toggle -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="Logo.jpg" alt="SearchKaro Logo" class="logo-img">
+        </div>
+        <div class="header-toggle">
+            <input class="l" id="toggle" type="checkbox" />
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <h1 class="logo">
+                <span class="logo-large letter-s">S</span><span class="logo-small">earch</span><span class="logo-large letter-k">K</span><span class="logo-small">aro</span>
+            </h1>
+            <p class="tagline">Mil Jaega!</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-bar">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        placeholder="Yahaan type karo..." 
+                        data-placeholder-default="Yahaan type karo..."
+                        data-placeholder-focus="Jaise 'UPSC ka syllabus'"
+                        autocomplete="off"
+                    >
+                    <div class="search-icons">
+                        <button class="voice-search-btn" title="Boliye, Sunta Hoon!">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 12.66 10.34 14 12 14Z" fill="#4285F4"/>
+                                <path d="M17 11C17 14.53 14.39 17.44 11 17.93V21H13V23H11H9V21H11V17.93C7.61 17.44 5 14.53 5 11H7C7 13.76 9.24 16 12 16C14.76 16 17 13.76 17 11H17Z" fill="#4285F4"/>
+                            </svg>
+                        </button>
+                        <button class="camera-search-btn" title="Camera Search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 2L7.17 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4H16.83L15 2H9ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" fill="#4285F4"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Buttons -->
+            <div class="search-buttons">
+                <button class="search-btn primary-btn">Search Karo</button>
+                <button class="search-btn secondary-btn">Mera Bhagy</button>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <a href="#" class="quick-link" data-category="news">
+                <span class="link-text">Aaj Tak</span>
+            </a>
+            <a href="#" class="quick-link" data-category="videos">
+                <span class="link-text">Trending on YouTube</span>
+            </a>
+            <a href="#" class="quick-link" data-category="shopping">
+                <span class="link-text">Deals on Flipkart</span>
+            </a>
+            <a href="#" class="quick-link" data-category="cricket">
+                <span class="link-text">Cricket Score</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="about.html" class="footer-link">About SearchKaro</a>
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                <a href="terms.html" class="footer-link">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <a href="help.html" class="footer-link">Help Center</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+                <a href="feedback.html" class="footer-link">Feedback</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SearchKaro. Made with ❤️ in India</p>
+        </div>
+    </footer>
+
+    <!-- Festival Doodle Container (for special occasions) -->
+    <div class="festival-doodle" id="festivalDoodle" style="display: none;">
+        <!-- Dynamic festival content will be loaded here -->
+    </div>
+
+    <!-- Language Toggle at Bottom Right -->
+    <div class="language-toggle bottom-right">
+        <span class="lang-option active" data-lang="en">English</span>
+        <span class="lang-separator">|</span>
+        <span class="lang-option" data-lang="hi">हिंदी</span>
+        <span class="lang-separator">|</span>
+        <span class="lang-option" data-lang="mr">मराठी</span>
+        <span class="lang-separator">|</span>
+        <span class="lang-option" data-lang="ta">தமிழ்</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
